@@ -1,0 +1,41 @@
+.jumbotron{
+    min-height: 638px !important;
+    background-image: url("images/jumbo.jpg");
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.navbar-brand img{
+    width:100px ;
+    height:50px;
+    position:relative !important;
+    top:1px;
+    display:inline-block;
+}
+.navbar-brand h4{
+    position:relative;
+    left:8px;
+    top:4px;
+    display:inline-block;
+}
+.colorrule{
+    background-color: black !important;
+}
+#footer{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    width:100%;
+    padding:0;
+    margin:0;
+    height:40px;
+    padding:8px;
+}
+
+.showbrand{
+    display:inline-block !important;
+}
+@media(max-width:568px){
+    .navbar-brand h4{
+        display:none;
+    }
+}

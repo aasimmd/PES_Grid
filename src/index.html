@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PES Solar Solutions</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="css/all.css" rel="stylesheet" type="text/css"/>
+		
+		<style>
+		
+		body {
+		margin : 0 !important;
+		padding : 0 !important;
+		}
+		
+
+		#content {
+			display: none;
+			width : 100%;
+		}
+		
+		
+		.container-fluid #yolo {
+			width : 100% !important;
+			margin : 0 !important;
+		}
+		</style>
+		
+		
+    </head>
+    
+	
+	<body>
+        <!-- Top Bar Start-->
+
+	<div id="yolo" class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo1.jpg" alt="Pes Logo">
+                <h4>PES Solar Solutions</h4>
+            </a>
+            <button id="buttonspan" type="button" class="navbar-toggler" data-toggle="collapse"  data-target="#brand">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="brand" class="collapse navbar-collapse text-white ">
+                <ul  class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link"></a><h4 class=" d-inline-block d-sm-none">PES Solar Solutions</h4>
+					<li id="account" class="nav-item"></li>
+                </ul>
+            </div>
+        </nav>
+	
+
+
+        <!-- Top Bar End-->
+
+
+
+
+
+
+        <!-- Main Content Start-->
+<div class="">
+      <div class="row">
+      <main role="main" class="col-lg-12 d-flex justify-content-center">
+                <div id="loader" class="text-center">
+                  <p class="text-center">Loading...</p>
+                </div>
+                
+               <div id="content" class="jumbotron">
+                <div class="row w-100 ml-1 ml-md-0">
+                
+                <div class="col-md-4 text-center p-5 ">
+                    <hr size="50" class="my-4 colorrule" >
+                    <h4 class="display-5 text-danger">Total Power</h4><br>
+                    <h4 id="totalvalue" class="display-5"> </h4>
+                    <hr size="50" class="my-4 colorrule" >
+                   
+				   <form onSubmit="App.addpanels(); return false;">
+                        <h4 class="display-5 text-danger p-2 mt-4 mb-4" >Add Panels</h4>
+                        <div class="form-group ">
+                            <div class="input-group mt-3 mb-3">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-info " type="button">Panels</button>
+                                </div>
+                                <input id="add" type="text" class="form-control " placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <button  type="submit" class="btn btn-outline-info btn-lg btn-block my-4"><Strong>Submit</Strong></button>
+                        </div>
+                    </form>
+					
+                </div>
+				
+				
+				
+                <div class="col-md-4 text-center p-5 ">
+                    <hr size="70" class="my-4 colorrule" >
+                    <h4  class="display-5 text-danger">Sold Power</h4><br>
+                    <h4  id="soldvalue" class="display-5"></h4>
+                    <hr size="50" class="my-4 colorrule" >
+                    
+                    <form onSubmit="App.addBuyer(); return false;">
+                        <h4 class="display-5 text-danger p-2 form-group mt-4 mb-4" >Add Buyer</h4>
+                        <div class="form-group ">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-info" type="button">Name</button>
+                                </div>
+                                <input id="newbuyer" type="text" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-info" type="button">Power</button>
+                                </div>
+                                <input id="newpow" type="text" class="form-control check" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <button type="submit" class="btn btn-outline-info btn-lg btn-block my-4"><Strong>Submit</Strong></button>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+				
+				
+                <div class="col-md-4 text-center p-5 ">
+                    <hr size="50" class="my-4 colorrule" >
+                    <h4 class="display-5 text-danger">Consumed Power</h4><br>
+                    <h4 id="consumedvalue" class="display-5"> Kw</h4>
+                    <hr size="50" class="my-4 colorrule" >
+                    
+					<form onSubmit="App.addconsumption(); return false;">
+                        <h4 class="display-5 text-danger p-2 mt-4 mb-4" >Add Consumption</h4>
+                        <div class="form-group">
+                            <div class="input-group mt-3 mb-3">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-info" type="button">Power</button>
+                                </div>
+                                <input id="consume" type="text" class="form-control check" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <button type="submit" class="btn btn-outline-info btn-lg btn-block my-4"><Strong>Submit</Strong></button>
+                        </div>
+                    </form>
+
+                </div>
+				
+                
+            </div>
+            
+        </div>
+      </main> 
+	</div>
+</div>
+
+
+        <!-- Main Content End-->
+
+
+
+
+
+
+        <!-- Footer Start-->
+
+
+
+
+       
+
+
+
+
+
+        <!-- Footer End-->
+
+
+	</div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+        <script src="App.js" type="text/javascript"></script>
+        
+		<script>
+		
+		</script>
+        
+    </body>
+</html>
