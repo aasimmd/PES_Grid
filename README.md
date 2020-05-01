@@ -2,9 +2,11 @@
 A smart electrical grid prototype running on a decentralised server(Blockchain).  
   
 # Dependencies
-Node js  
-Truffle  
-Solidity  
+<ul>
+  <li>Node js</li>
+  <li>Truffle</li>
+  <li>Solidity</li>
+</ul>  
   
 # How to run 
 Run the command 'npm install' to install the dependencies.  
