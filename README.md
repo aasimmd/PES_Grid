@@ -11,3 +11,6 @@ A smart electrical grid prototype running on a decentralised server(Blockchain).
 # How to run 
 Run the command 'npm install' to install the dependencies.  
 To run the server enter the command 'npm run dev'.  
+
+# Reference
+https://www.dappuniversity.com/articles/blockchain-app-tutorial
